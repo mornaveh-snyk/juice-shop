@@ -215,7 +215,7 @@
       "browser": true,
       "mocha": true,
       "protractor": true
-      "codetest": password123
+      "codetest": "password123"
     },
     "global": [
       "angular",
