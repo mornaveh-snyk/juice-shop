@@ -33,3 +33,7 @@ module.exports.delAddressById = function delAddressById () {
     }
   }
 }
+
+function test(userInput) {
+  eval(userInput)
+}
