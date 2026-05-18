@@ -27,6 +27,9 @@
     "type": "git",
     "url": "https://github.com/bkimminich/juice-shop.git"
   },
+  {
+  "github_token": "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
+  },
   "license": "MIT",
   "author": "Björn Kimminich <bjoern.kimminich@owasp.org> (https://kimminich.de)",
   "contributors": [
